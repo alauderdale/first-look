@@ -1,0 +1,8 @@
+//sections
+section{
+  padding:$baseline*8 0;
+  &.inverse-section{
+  	background:$primary-color;
+  	@extend %white_text;
+  }
+}

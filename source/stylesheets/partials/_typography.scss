@@ -1,0 +1,155 @@
+// typography baselines and @font face setups
+
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Open+Sans:400,600,700,800');
+//text transforms
+
+.text-uppercase{
+  text-transform:uppercase;
+}
+
+//text colors
+
+.extra-light-text-color{
+  color:$extra-light-text-color;
+}
+
+.light-text-color{
+  color:$light-text-color;
+}
+
+.text-color{
+  color:$text-color;
+}
+
+.dark-text-color{
+  color:$dark-text-color;
+}
+
+
+
+//alerts
+
+.text-success{
+  color:$success-color;
+}
+
+.text-warning{
+  color:$warning-color;
+}
+
+.text-danger{
+  color:$danger-color;
+}
+
+//links
+
+.link-color{
+  color:$link-color;
+}
+
+
+
+
+//font families
+
+
+
+.regular-font{
+    font-weight:400;
+}
+
+.medium-font{
+    font-weight:600;
+}
+
+.bold-font{
+    font-weight:700;
+}
+
+.extra-bold-font{
+    font-weight:800;
+}
+
+
+
+
+
+
+//font color
+
+.primary-text-color{
+  color:$primary-color!important;
+}
+
+.secondary-text-color{
+  color:$secondary-color!important;
+}
+
+
+
+//font size
+
+.micro-text{
+  font-size:0.7rem;
+}
+
+
+//font base
+
+h1{
+  font-size:57px;
+  line-height:69px;
+  font-family:$regular-font-name;
+}
+
+h2{
+  font-size:36px;
+  line-height:41px;
+  font-family:$regular-font-name;
+}
+
+h3{
+  font-size:27px;
+  line-height:35px;
+  font-family:$regular-font-name;
+}
+
+h4{
+  font-size:18px;
+  line-height:24px;
+  text-transform:uppercase;
+  font-family:$regular-font-name;
+}
+
+h5{
+  font-size:16px;
+  line-height:22px;
+  font-family:$regular-font-name;
+}
+
+h6{
+  font-size:14px;
+  line-height:23px;
+  font-family:$regular-font-name;
+}
+
+
+
+
+//lists
+
+
+
+//mobile
+
+  @include breakpoint(md) {
+
+
+  }
+
+
+  @include breakpoint(sm) {
+
+
+  }
