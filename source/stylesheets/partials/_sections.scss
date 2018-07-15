@@ -1,8 +1,52 @@
+
+
+
 //sections
 section{
   padding:$baseline*8 0;
+  @include breakpoint(sm) {
+  	padding:$baseline*2 0;
+  }
   &.inverse-section{
   	background:$primary-color;
   	@extend %white_text;
+  }
+  //first section on home page
+  &#section-intro{
+  display: table;
+  width: 100%;
+  min-height: calc(100vh - #{$navbar-height});
+  padding:0;
+  background:$primary-color url(../images/masthead-bg.svg) no-repeat center center;
+  .text-container{
+  	position:relative;
+  	top:-$navbar-height/2;
+  	display: table-cell;
+  	vertical-align: middle;
+	animation-delay: .62s;
+	visibility: visible;
+	opacity: 0;
+	animation: masthead-caption 2s .5s cubic-bezier(0.18, 0.98, 0.45, 1) forwards;
+	will-change: opacity, transform;
+
+
+  }
+  	.btn-scroll{
+  		margin-top:$baseline*2;
+  	}
+  }
+  &#section-portfolio-companies{
+  	background:$primary-color url(../images/city.png) no-repeat center center;
+  	background-size: cover;
+
+  }
+  &#section-portfolios{
+  	position:relative;
+  	top:-80px;
+  	margin-bottom:-80px;
+  	@include breakpoint(sm) {
+  		margin-bottom:0;
+  		top:0;
+  	}
   }
 }

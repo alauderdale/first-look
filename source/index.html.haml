@@ -1,13 +1,102 @@
-%section.inverse-section
+%section.inverse-section.relative#section-intro
+	.text-container
+		.container
+			.row
+				.col-12
+					%h1.text-center.bold-font.double-margin-bottom
+						We invest in film and others.
+					.row
+						.col-lg-8.mx-auto.col-12
+							%p.text-center
+								First Look Ventures is Mauris et volutpat neque, sit amet efficitur neque. Vestibulum sit amet risus vel tortor viverra maximus. Donec suscipit ante mattis augue ullamcorper, vel lacinia nulla varius. Nunc ac nunc vel
+							.text-center.double-margin-top
+								%a.btn.btn-light.btn-lg{:href => "#"}
+									LEarn more
+					.text-center
+						%a.btn.white-text-color.btn-scroll{:href=>"#"}
+							%i.material-icons
+								keyboard_arrow_down
+
+%section#section-about
 	.container
-		.row
-			.col-12
-				%h1.text-center.bold-font.double-margin-bottom
-					We invest in film and others.
-				.row
-					.col-lg-7.mx-auto.col-12
-						%p.text-center
-							First Look Ventures is Mauris et volutpat neque, sit amet efficitur neque. Vestibulum sit amet risus vel tortor viverra maximus. Donec suscipit ante mattis augue ullamcorper, vel lacinia nulla varius. Nunc ac nunc vel dolor.
-						.text-center.double-margin-top
-							%a.btn.btn-light.btn-lg{:href => "#"}
-								LEarn more
+		.row.justify-content-between
+			.col-md-5
+				.double-margin-bottom
+					%h4.extra-light-text-color
+						Process
+					%h2.bold-font.dark-text-color.margin-bottom
+						How we do it
+					%P
+						First Look Ventures is Mauris et volutpat neque, sit amet efficitur neque. Vestibulum sit amet risus vel tortor viverra maximus. Donec suscipit ante mattis augue ullamcorper, vel lacinia nulla varius. Nunc ac nunc vel dolor.
+					%P
+						First Look Ventures is Mauris et volutpat neque, sit amet efficitur neque. Vestibulum sit amet.
+			.col-md-6
+				.how-stats-container
+					.row.no-gutters
+						.col-md-6
+							.stat-container.primary-bg-color
+								%h1.bold-font.white-text-color
+									100
+								%h3.bold-font.white-text-color
+									I’m a stat that will go here
+					.row.no-gutters
+						.col-md-6.col-md-auto.ml-auto
+							.stat-container.light-bg-color
+								%h1.bold-font.dark-text-color
+									40%
+								%h3.bold-font.dark-text-color
+									I’m a stat that will go here
+.padded
+	%section#section-portfolio-companies.inverse-section.padding-bottom
+		.container
+			.row
+				.padded
+					%h1.bold-font
+						Portfolio companies					
+%section#section-companies.no-padding-bottom
+	.container
+		.row.justify-content-between
+			.col-md-6.order-last.order-1.order-md-2
+				.double-margin-bottom
+					%h4.extra-light-text-color
+						Companies
+					%h2.bold-font.dark-text-color.margin-bottom
+						About the companies
+					%P
+						First Look Ventures is Mauris et volutpat neque, sit amet efficitur neque. Vestibulum sit amet risus vel tortor viverra maximus. Donec suscipit ante mattis augue ullamcorper, vel lacinia nulla varius. Nunc ac nunc vel dolor.
+			.col-md-6.order-2.order-md-1
+				.d-none.d-md-inline
+					.diamond-bg-desktop
+						.stat-container.top
+							%h1.bold-font.dark-text-color
+								100k
+							%h3.bold-font.dark-text-color
+								Invested
+						.stat-container.bottom
+							%h1.bold-font.dark-text-color
+								200
+							%h3.bold-font.dark-text-color
+								IPOs
+				/ .d-lg-none.d-md-none
+				/ 	.row.no-gutters
+				/ 		.col
+				/ 			.stat-container.padded.primary-bg-color
+				/ 				%h1.bold-font.white-text-color
+				/ 					100k
+				/ 				%h3.bold-font.white-text-color
+				/ 					Invested
+				/ 	.row.no-gutters
+				/ 		.col
+				/ 			.stat-container.padded.light-bg-color
+				/ 				%h1.bold-font.dark-text-color
+				/ 					200
+				/ 				%h3.bold-font.dark-text-color
+				/ 					IPOs
+%section#section-portfolios.no-padding
+	.container
+		.row.no-gutters
+			-12.times do
+				.col-4
+					%a.portfolio-container{:href=>"#"}
+						.inner
+							%img.img-responsive{:src=>"/images/tmp/logo.png"}

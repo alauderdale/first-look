@@ -93,4 +93,13 @@ a{
 	&.btn-lg{
 		padding:.8rem 1rem;
 	}
+	&.btn-scroll{
+		color:rgba(255,255,255,.5);
+		&:hover{
+			color:rgba(255,255,255,1);
+		}
+		i{
+			font-size:52px;
+		}
+	}
 }

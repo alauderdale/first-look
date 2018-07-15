@@ -1,0 +1,104 @@
+.how-stats-container{
+	.stat-container{
+		padding:30px;
+		min-height:235px;
+		position:relative;
+		@include breakpoint(sm) {
+			min-height:auto;
+		}
+		h3{
+			position:absolute;
+			bottom:10%;
+			padding-right:20px;
+			@include breakpoint(sm) {
+				position:relative;
+				padding-right:0;
+			}
+		}
+	}
+}
+
+
+
+.diamond-bg-desktop{
+	background: url(../images/diamond-bg.svg) no-repeat top center;
+	background-size:100%;
+	height:615px;
+	position:relative;
+	top:-110px;
+	margin-bottom:-110px;
+	@include breakpoint(lg) {
+		top:0;
+		margin-bottom:0px;
+	}
+	.stat-container{
+		text-align:center;
+		position:absolute;
+		&.top{
+			right:0;
+			left: -33%;
+			top: 20%;
+			@include breakpoint(lg) {
+				left: -33%;
+				top: 16%;
+			}
+
+			h1,h3{
+				color:white!important;
+			}
+			@include breakpoint(md) {
+			    left: -33%;
+				top: 12%;
+				h1{
+				    font-size: 46px;
+				    line-height: 37px;
+				}
+				h3{
+
+				}
+			}
+		}
+		&.bottom{
+			right: 22%;
+			top: 50%;
+			@include breakpoint(lg) {
+				right: 20%;
+				top: 40%;
+			}
+			@include breakpoint(md) {
+			    right: 20%;
+			    top: 30%;
+				h1{
+				    font-size: 46px;
+				    line-height: 37px;
+				}
+				h3{
+
+				}
+			}
+		}
+	}
+}
+
+a.portfolio-container{
+	padding:$baseline/2;
+	width:100%;
+	display:inline-block;
+	display: table;
+	.inner{
+		border:1px solid $border-color;
+		padding:$baseline;
+		text-align:center;
+		height:176px;
+		position:relative;
+		display: table-cell;
+		vertical-align: middle;
+		background:white;
+		@include breakpoint(sm) {
+			height:auto;
+		}
+		img{
+			max-width:100%;
+		}
+	}
+}

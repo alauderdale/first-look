@@ -7,9 +7,11 @@
 html {
       max-width: 100%;
     overflow-x: hidden;
+
 }
 
 body{
+  border:calc(var(--body-border-width, 20px) * 1 / 1 + 0px) solid $primary-color;
   font: 100%;
   font-size:$base-font-size;
   color: $text-color;
@@ -25,6 +27,22 @@ body{
   font-weight:400;
   background-color:$background-color;
   padding-top:$navbar-height;
+  &:before,&:after{
+    z-index: 100;
+    content: '';
+    user-select: none;
+    pointer-events: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    border: inherit;
+    border-bottom-width: 20px;
+    // border-color: var(--secondary, #0828CC);
+    will-change: border-color;
+  }
+
 }
 
 .flex{
@@ -93,4 +111,12 @@ img{
 
 .inline{
     display:inline;
+}
+
+.light-bg-color{
+  background:$off-white-dark-color;
+}
+
+.primary-bg-color{
+  background:$primary-color;
 }
