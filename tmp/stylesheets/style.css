@@ -812,7 +812,7 @@ a.portfolio-container {
     a.portfolio-container .inner img {
       max-width: 100%; }
   a.portfolio-container:hover .inner {
-    border: 4px inset #11436E; }
+    box-shadow: 4px 4px 0 inset #11436E, -4px -4px 0 inset #11436E; }
 
 @keyframes menu-zoom {
   0% {

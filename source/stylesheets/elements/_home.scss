@@ -104,7 +104,7 @@ a.portfolio-container{
 	}
 	&:hover{
 		.inner{
-			border:4px inset $primary-color;
+			box-shadow:4px 4px 0 inset $primary-color,-4px -4px 0 inset $primary-color ;
 		}
 	}
 }
