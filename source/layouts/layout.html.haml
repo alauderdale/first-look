@@ -2,10 +2,10 @@
 %html
   %head
     = partial "shared/scripts"
-    %body{:class => page_classes}
+    %body{:class => page_classes, "data-spy"=>"scroll", "data-target"=>"#primary-nav", "data-offset"=>"80"}
       = partial "layouts/header"
       /end menu
-      .main
+      #main
         = yield
       /end main content
       = partial "layouts/footer"

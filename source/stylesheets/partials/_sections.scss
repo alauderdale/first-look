@@ -5,7 +5,7 @@
 section{
   padding:$baseline*8 0;
   @include breakpoint(sm) {
-  	padding:$baseline*2 0;
+  	padding:$baseline*6 0;
   }
   &.inverse-section{
   	background:$primary-color;
@@ -18,27 +18,33 @@ section{
   min-height: calc(100vh - #{$navbar-height});
   padding:0;
   background:$primary-color url(../images/masthead-bg.svg) no-repeat center center;
-  .text-container{
-  	position:relative;
-  	top:-$navbar-height/2;
-  	display: table-cell;
-  	vertical-align: middle;
-	animation-delay: .62s;
-	visibility: visible;
-	opacity: 0;
-	animation: masthead-caption 2s .5s cubic-bezier(0.18, 0.98, 0.45, 1) forwards;
-	will-change: opacity, transform;
-
-
-  }
+	.text-container{
+		position:relative;
+		display: table-cell;
+		vertical-align: middle;
+		animation-delay: .62s;
+		visibility: visible;
+		opacity: 0;
+		animation: masthead-caption 2s .5s cubic-bezier(0.18, 0.98, 0.45, 1) forwards;
+		will-change: opacity, transform;
+	}
   	.btn-scroll{
   		margin-top:$baseline*2;
+  	}
+  }
+  &#section-about{
+  	@include breakpoint(sm) {
+  		padding:$baseline 0 $baseline*4 0;
   	}
   }
   &#section-portfolio-companies{
   	background:$primary-color url(../images/city.png) no-repeat center center;
   	background-size: cover;
-
+  }
+  &#section-companies{
+  	@include breakpoint(sm) {
+  		padding-top:$baseline;
+  	}
   }
   &#section-portfolios{
   	position:relative;
@@ -47,6 +53,40 @@ section{
   	@include breakpoint(sm) {
   		margin-bottom:0;
   		top:0;
+  		padding-bottom:$baseline*4;
+
   	}
+  }
+  &#section-team{
+	background:black url('../images/chris-profile.png') no-repeat center center;
+	background-size: cover;
+	position: relative;
+    overflow: hidden;
+    display: flex;
+	@include breakpoint(sm) {
+		padding:$baseline*2 0;
+		background:$primary-color;
+		// &:before{
+		// 	background: rgba(0,0,0,.7);
+		//     position: absolute;
+		//     content: "";
+		//     top: 0;
+		//     left: 0;
+		//     width: 100%;
+		//     height: 100%;
+		//     text-align: center;
+		// }
+		h1,h2,h3,h4,h5,h6,p{
+			color:white!important;
+		}
+		ul.social-menu{
+			li{
+				a{
+					color:white;
+				}
+			}
+		}
+
+	}
   }
 }

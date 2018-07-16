@@ -2,6 +2,31 @@
 
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700|Open+Sans:400,600,700,800');
+
+//imports
+
+@font-face {
+    font-family: 'socialicoregular';
+    src: url('../font/socialico-webfont.eot');
+    src: url('../font/socialico-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/socialico-webfont.woff') format('woff'),
+         url('../font/socialico-webfont.ttf') format('truetype'),
+         url('../font/socialico-webfont.svg#socialicoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'socialico_plusregular';
+    src: url('../font/socialico_plus-webfont.woff2') format('woff2'),
+         url('../font/socialico_plus-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
 //text transforms
 
 .text-uppercase{
@@ -77,7 +102,11 @@
 
 
 
+//social
 
+.social-font-name{
+  font-family:$social-font-name;
+}
 
 
 //font color

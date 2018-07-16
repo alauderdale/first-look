@@ -94,11 +94,17 @@ a.portfolio-container{
 		display: table-cell;
 		vertical-align: middle;
 		background:white;
+		@include transition-duration(.12s);
 		@include breakpoint(sm) {
 			height:auto;
 		}
 		img{
 			max-width:100%;
+		}
+	}
+	&:hover{
+		.inner{
+			border:4px inset $primary-color;
 		}
 	}
 }

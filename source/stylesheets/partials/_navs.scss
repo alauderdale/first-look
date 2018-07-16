@@ -1,0 +1,21 @@
+ul.social-menu {
+	list-style: none;
+	display: inline-block;
+	margin-bottom: 0;
+	float: left;
+	li {
+		float: left;
+		font-size: 53px;
+		line-height: 1em;
+  		padding-right: 2px;
+		a {
+			@include transition-duration(.1s);
+			color: $dark-gray-color;
+			border: none;
+			&:hover, &:focus{
+				color: black;
+				text-decoration: none;
+			}
+		}
+	}
+}

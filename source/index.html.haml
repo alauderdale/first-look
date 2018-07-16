@@ -1,3 +1,4 @@
+
 %section.inverse-section.relative#section-intro
 	.text-container
 		.container
@@ -6,32 +7,22 @@
 					%h1.text-center.bold-font.double-margin-bottom
 						We invest in film and others.
 					.row
-						.col-lg-8.mx-auto.col-12
+						.col-lg-6.mx-auto.col-12
 							%p.text-center
-								First Look Ventures is Mauris et volutpat neque, sit amet efficitur neque. Vestibulum sit amet risus vel tortor viverra maximus. Donec suscipit ante mattis augue ullamcorper, vel lacinia nulla varius. Nunc ac nunc vel
+								First Look Ventures is Mauris et volutpat neque, sit amet efficitur neque. Vestibulum sit amet risus vel tortor viverra maximus. Donec suscipit ante mattis augue.
 							.text-center.double-margin-top
-								%a.btn.btn-light.btn-lg{:href => "#"}
-									LEarn more
+								%a.btn.btn-light.btn-lg.scroller-link{:href => "#section-about"}
+									Learn more
 					.text-center
-						%a.btn.white-text-color.btn-scroll{:href=>"#"}
+						%a.btn.white-text-color.btn-scroll.scroller-link{:href=>"#section-about"}
 							%i.material-icons
 								keyboard_arrow_down
 
 %section#section-about
 	.container
 		.row.justify-content-between
-			.col-md-5
-				.double-margin-bottom
-					%h4.extra-light-text-color
-						Process
-					%h2.bold-font.dark-text-color.margin-bottom
-						How we do it
-					%P
-						First Look Ventures is Mauris et volutpat neque, sit amet efficitur neque. Vestibulum sit amet risus vel tortor viverra maximus. Donec suscipit ante mattis augue ullamcorper, vel lacinia nulla varius. Nunc ac nunc vel dolor.
-					%P
-						First Look Ventures is Mauris et volutpat neque, sit amet efficitur neque. Vestibulum sit amet.
-			.col-md-6
-				.how-stats-container
+			.col-md-6.order-1.order-md-2
+				.how-stats-container.double-margin-bottom
 					.row.no-gutters
 						.col-md-6
 							.stat-container.primary-bg-color
@@ -46,7 +37,17 @@
 									40%
 								%h3.bold-font.dark-text-color
 									I’m a stat that will go here
-.padded
+			.col-md-5.order-2.order-md-1
+				.double-margin-bottom
+					%h4.extra-light-text-color.bold-font
+						Process
+					%h2.bold-font.dark-text-color.margin-bottom
+						How we do it
+					%P.lead
+						First Look Ventures is Mauris et volutpat neque, sit amet efficitur neque. Vestibulum sit amet risus vel tortor viverra maximus. Donec suscipit ante mattis augue ullamcorper, vel lacinia nulla varius. Nunc ac nunc vel dolor.
+					%P
+						First Look Ventures is Mauris et volutpat neque, sit amet efficitur neque. Vestibulum sit amet.
+.padded.d-none.d-md-block
 	%section#section-portfolio-companies.inverse-section.padding-bottom
 		.container
 			.row
@@ -58,7 +59,7 @@
 		.row.justify-content-between
 			.col-md-6.order-last.order-1.order-md-2
 				.double-margin-bottom
-					%h4.extra-light-text-color
+					%h4.extra-light-text-color.bold-font
 						Companies
 					%h2.bold-font.dark-text-color.margin-bottom
 						About the companies
@@ -77,26 +78,77 @@
 								200
 							%h3.bold-font.dark-text-color
 								IPOs
-				/ .d-lg-none.d-md-none
-				/ 	.row.no-gutters
-				/ 		.col
-				/ 			.stat-container.padded.primary-bg-color
-				/ 				%h1.bold-font.white-text-color
-				/ 					100k
-				/ 				%h3.bold-font.white-text-color
-				/ 					Invested
-				/ 	.row.no-gutters
-				/ 		.col
-				/ 			.stat-container.padded.light-bg-color
-				/ 				%h1.bold-font.dark-text-color
-				/ 					200
-				/ 				%h3.bold-font.dark-text-color
-				/ 					IPOs
-%section#section-portfolios.no-padding
+%section#section-portfolios.no-padding-top
 	.container
 		.row.no-gutters
 			-12.times do
-				.col-4
-					%a.portfolio-container{:href=>"#"}
+				.col-12.col-sm-6.col-md-4
+					%a.portfolio-container{:href=>"#", "data-toggle"=>"modal", "data-target"=>"#companyModal"}
 						.inner
 							%img.img-responsive{:src=>"/images/tmp/logo.png"}
+.padded.no-padding-bottom
+	#section-team-mobile
+		%img.max-width.no-margin-top.d-sm-block.d-md-none{:src=>"../images/chris-profile-mobile.png"}
+.padded.no-padding-top
+	%section#section-team
+		.container
+			.row
+				.col-md-5.ml-auto
+
+					%h4.extra-light-text-color.bold-font
+						Investor
+					%h2.bold-font.dark-text-color.margin-bottom
+						Chris Scordo
+					%P
+						Mauris et volutpat neque, sit amet efficitur neque. Vestibulum sit amet risus vel tortor viverra maximus. Donec suscipit ante mattis augue ullamcorper, vel lacinia nulla varius. Nunc ac nunc vel dolor.
+					
+					%ul.social-font-name.social-menu.list-inline
+						%li.list-inline-item
+							%a{:href=>"#"}
+								f
+						%li.list-inline-item
+							%a{:href=>"#"}
+								l
+
+%section#section-contact
+	.container
+		.row.text-center
+			.col-md-5.mx-auto
+				.double-margin-bottom.text-center
+					%h4.extra-light-text-color.bold-font
+						Contact
+					%h2.bold-font.dark-text-color.margin-bottom
+						Let's chat
+					%P
+						First Look Ventures is Mauris et volutpat neque, sit amet efficitur neque. Vestibulum sit amet.
+				%form
+					.double-margin-bottom
+						.form-group
+							%input.form-control.form-control-lg{:placeholder => "Your Email"}
+						.form-group
+							%input.form-control.form-control-lg{:placeholder => "Your Name"}
+						.form-group
+							%input.form-control.form-control-lg{:placeholder => "Your Phone"}
+						%button.btn.btn-primary.btn-lg.double-margin-top{:type => "submit", :style=>"min-width:150px;"} 
+							Send
+
+
+
+
+
+#companyModal.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "exampleModalLabel", :role => "dialog", :tabindex => "-1"}
+	.modal-dialog{:role => "document"}
+		.modal-content.padded
+			.modal-header{:style=>"border-bottom:none;"}
+				%button.close{"aria-label" => "Close", "data-dismiss" => "modal", :type => "button"}
+					%span{"aria-hidden" => "true"} ×
+			.modal-body
+				.text-center
+					.double-margin-bottom
+						%img.img-responsive{:src=>"/images/tmp/logo.png"}
+					%h2.bold-font.dark-text-color.double-margin-bottom
+						Pixar
+				%p
+					=lorem.paragraphs(1)
+
+			
